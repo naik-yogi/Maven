@@ -13,7 +13,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@Listeners
+@Listeners(MyListenerClass.class)
 public class SwagLabs {
 
     WebDriver driver;

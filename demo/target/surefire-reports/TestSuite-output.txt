@@ -1,0 +1,6 @@
+Test started
+performLogin test case started
+The name of the testcase passed is :performLogin
+addToCart test case started
+The name of the testcase passed is :addToCart
+Test Finished
