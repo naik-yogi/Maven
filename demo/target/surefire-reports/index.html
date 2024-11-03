@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,7 +108,27 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.example.SwagLabs" class="method navigator-link" hash-for-method="checkOut">checkOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.example.SwagLabs" class="method navigator-link" hash-for-method="navigateToCart">navigateToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.example.SwagLabs" class="method navigator-link" hash-for-method="orderDetails">orderDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.example.SwagLabs" class="method navigator-link" hash-for-method="performLogin">performLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.example.SwagLabs" class="method navigator-link" hash-for-method="yourInfo">yourInfo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -140,11 +160,47 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="checkOut">
+                  </a> <!-- checkOut -->
+                  <span class="method-name">checkOut</span>
+                  <em>
+(Clicing on check)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToCart">
+                  </a> <!-- navigateToCart -->
+                  <span class="method-name">navigateToCart</span>
+                  <em>
+(Clicking on cart button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="orderDetails">
+                  </a> <!-- orderDetails -->
+                  <span class="method-name">orderDetails</span>
+                  <em>
+(Fetcging ordr dtails)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="performLogin">
                   </a> <!-- performLogin -->
                   <span class="method-name">performLogin</span>
                   <em>
 (Logging in by entering valid username and password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="yourInfo">
+                  </a> <!-- yourInfo -->
+                  <span class="method-name">yourInfo</span>
+                  <em>
+(Entering checkout infos)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -204,20 +260,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'performLogin')
 data.setCell(0, 2, 'com.example.SwagLabs')
-data.setCell(0, 3, 507);
+data.setCell(0, 3, 616);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addToCart')
+data.setCell(1, 1, 'yourInfo')
 data.setCell(1, 2, 'com.example.SwagLabs')
-data.setCell(1, 3, 83);
+data.setCell(1, 3, 381);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'orderDetails')
+data.setCell(2, 2, 'com.example.SwagLabs')
+data.setCell(2, 3, 116);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'navigateToCart')
+data.setCell(3, 2, 'com.example.SwagLabs')
+data.setCell(3, 3, 99);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addToCart')
+data.setCell(4, 2, 'com.example.SwagLabs')
+data.setCell(4, 3, 97);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkOut')
+data.setCell(5, 2, 'com.example.SwagLabs')
+data.setCell(5, 3, 90);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 590 ms</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -250,15 +322,31 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">performLogin</span>
-                <span class="method-start">2390 ms</span>
+                <span class="method-start">4303 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addToCart</span>
-                <span class="method-start">2905 ms</span>
+                <span class="method-start">4929 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">navigateToCart</span>
+                <span class="method-start">5029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkOut</span>
+                <span class="method-start">5132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">yourInfo</span>
+                <span class="method-start">5224 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">orderDetails</span>
+                <span class="method-start">5607 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">2989 ms</span>
+                <span class="method-start">5725 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

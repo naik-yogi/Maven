@@ -1,5 +1,6 @@
 package com.example;
 
+import org.checkerframework.checker.units.qual.t;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,7 +14,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@Listeners(MyListenerClass.class)
+//@Listeners(MyListenerClass.class)
 public class SwagLabs {
 
     WebDriver driver;
@@ -46,6 +47,34 @@ public class SwagLabs {
     @Test(description = "Adding a product to cart", dependsOnMethods = "performLogin", priority = 2)
     public void addToCart() {
         driver.findElement(By.xpath("//button[@id='add-to-cart-sauce-labs-backpack']")).click();
+    }
+
+    @Test(description = "Clicking on cart button", priority = 3)
+    public void navigateToCart() {
+        driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
+
+    }
+
+    @Test(description = "Clicing on check", priority = 4)
+    public void checkOut() {
+        driver.findElement(By.id("checkout")).click();
+
+    }
+
+    @Test(description = "Entering checkout infos", priority = 5)
+    public void yourInfo() {
+        driver.findElement(By.id("first-name")).sendKeys("Yogesh");
+        driver.findElement(By.id("last-name")).sendKeys("Naik");
+        driver.findElement(By.id("postal-code")).sendKeys("581324");
+        driver.findElement(By.id("continue")).click();
+
+    }
+
+    @Test(description = "Fetcging ordr dtails", priority = 6)
+    public void orderDetails() {
+        WebElement totalValue = driver.findElement(By.xpath("//div[@class='summary_total_label']"));
+        System.out.println("Tota order value is: " + totalValue.getText());
+        driver.findElement(By.id("finish")).click();
     }
 
     @AfterTest(description = "Closes the browser")
